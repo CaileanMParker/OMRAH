@@ -225,6 +225,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -621,9 +629,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:OMRAHInstaller"
+        "ProductName" = "8:OMRAH"
         "ProductCode" = "8:{08B16013-7008-437B-8258-FE74DB0C52B9}"
-        "PackageCode" = "8:{F4357302-8D32-4FA9-94B9-0E7F37F9395E}"
+        "PackageCode" = "8:{5C8EF7E0-9779-49E1-AF45-7772FDF314FE}"
         "UpgradeCode" = "8:{345EE650-FF2C-459A-966A-7932420F9193}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1218,7 +1226,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_1A504857C73142829BCDE187844AB8AE"
             {
-            "SourcePath" = "8:..\\OMRAH\\obj\\Debug\\OMRAH.dll"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_083DA80F4A9B4641A90DFCE40246C1CF"
