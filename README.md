@@ -16,7 +16,7 @@ As of now, OMRAH only support seeting one "rule" (i.e., way to handle meetings r
 
 ## Configuration
 
-OMRAH can be configured by editing the "OMRAH.dll.config" app settings file in the installation directory ("[ProgramFiles64Folder]\CaileanMParker\OMRAH\" by default). The following settings are available:
+OMRAH can be configured by editing the "OMRAH.dll.config" app settings file in the installation directory ("[ProgramFiles64Folder]\CaileanMParker\OMRAH\" by default, will need admin privileges). The following settings are available:
 
 | Setting | Type | Description | Default |
 | --- | --- | --- | --- |
