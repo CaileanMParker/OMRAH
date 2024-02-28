@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OMRAH.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SubjectFilters" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;string&gt;ooo&lt;/string&gt;
+  &lt;string&gt;out of office&lt;/string&gt;
+  &lt;string&gt;oof&lt;/string&gt;
+  &lt;string&gt;out of facility&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="RecipientFilters" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;string&gt;macoop_all@microsoft.com&lt;/string&gt;
+  &lt;string&gt;sqlback@service.microsoft.com&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="UnlessDirect" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CategoryName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Other OOF</Value>
+    </Setting>
+    <Setting Name="CategoryColor" Type="Microsoft.Office.Interop.Outlook.OlCategoryColor" Scope="User">
+      <Value Profile="(Default)">olCategoryColorGray</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
