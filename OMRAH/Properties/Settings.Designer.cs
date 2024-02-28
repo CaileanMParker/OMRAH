@@ -43,11 +43,6 @@ namespace OMRAH.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
-<ArrayOfString xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
-  <string>macoop_all@microsoft.com</string>
-  <string>sqlback@service.microsoft.com</string>
-</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection RecipientFilters {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["RecipientFilters"]));
@@ -59,7 +54,7 @@ namespace OMRAH.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool UnlessDirect {
             get {
                 return ((bool)(this["UnlessDirect"]));
@@ -90,6 +85,30 @@ namespace OMRAH.Properties {
             }
             set {
                 this["CategoryColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SendResponse {
+            get {
+                return ((bool)(this["SendResponse"]));
+            }
+            set {
+                this["SendResponse"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("olMeetingTentative")]
+        public global::Microsoft.Office.Interop.Outlook.OlMeetingResponse Response {
+            get {
+                return ((global::Microsoft.Office.Interop.Outlook.OlMeetingResponse)(this["Response"]));
+            }
+            set {
+                this["Response"] = value;
             }
         }
     }

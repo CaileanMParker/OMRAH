@@ -12,20 +12,22 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="RecipientFilters" Type="System.Collections.Specialized.StringCollection" Scope="User">
-      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;string&gt;macoop_all@microsoft.com&lt;/string&gt;
-  &lt;string&gt;sqlback@service.microsoft.com&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="UnlessDirect" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="CategoryName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Other OOF</Value>
     </Setting>
     <Setting Name="CategoryColor" Type="Microsoft.Office.Interop.Outlook.OlCategoryColor" Scope="User">
       <Value Profile="(Default)">olCategoryColorGray</Value>
+    </Setting>
+    <Setting Name="SendResponse" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Response" Type="Microsoft.Office.Interop.Outlook.OlMeetingResponse" Scope="User">
+      <Value Profile="(Default)">olMeetingTentative</Value>
     </Setting>
   </Settings>
 </SettingsFile>

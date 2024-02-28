@@ -59,7 +59,8 @@ namespace OMRAH
                     break;
                 }
                 else if (
-                    Array.Exists(
+                    recipientFilters == null
+                    || Array.Exists(
                         recipientFilters.Cast<string>().ToArray(), filter =>
                             (recipientAddress is string && recipientAddress.Contains(filter))
                             || recipientName.Contains(filter)
@@ -71,15 +72,13 @@ namespace OMRAH
                 }
             }
             Debug.WriteLine($"Filter match: {filterMatch}");
-            if (filterMatch)
-            {
-                appointment.Categories = ResolveCategory();
-                Outlook.MeetingItem response = appointment.Respond(Outlook.OlMeetingResponse.olMeetingTentative, false);
-                //response.Send();
-                response.Close(Outlook.OlInspectorClose.olDiscard);
-                meetingRequest.Delete();
-                appointment.Save();
-            }
+            if (!filterMatch) return;
+            appointment.Categories = ResolveCategory();
+            Outlook.MeetingItem response = appointment.Respond(Properties.Settings.Default.Response, false);
+            if (Properties.Settings.Default.SendResponse) response.Send();
+            response.Close(Outlook.OlInspectorClose.olDiscard);
+            meetingRequest.Delete();
+            appointment.Save();
         }
 
         private string ResolveCategory()
