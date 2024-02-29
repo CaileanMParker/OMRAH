@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0A96A610B57C4E719FCE3DDABAB1611D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1A504857C73142829BCDE187844AB8AE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -35,6 +41,12 @@
         {
         "MsmKey" = "8:_24131EF89148025B70FF4F3159DAAAB8"
         "OwnerKey" = "8:_1A504857C73142829BCDE187844AB8AE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_30AD010D4F644CF3A574A82FDB801581"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -263,6 +275,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0A96A610B57C4E719FCE3DDABAB1611D"
+            {
+            "SourcePath" = "8:..\\LICENSE"
+            "TargetName" = "8:LICENSE"
+            "Tag" = "8:"
+            "Folder" = "8:_083DA80F4A9B4641A90DFCE40246C1CF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_24131EF89148025B70FF4F3159DAAAB8"
             {
             "AssemblyRegister" = "3:1"
@@ -292,6 +324,26 @@
             "Register" = "3:1"
             "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_30AD010D4F644CF3A574A82FDB801581"
+            {
+            "SourcePath" = "8:..\\README.md"
+            "TargetName" = "8:README.md"
+            "Tag" = "8:"
+            "Folder" = "8:_083DA80F4A9B4641A90DFCE40246C1CF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3CF75A3F182A43EDB10B603186619308"
@@ -631,7 +683,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OMRAH"
         "ProductCode" = "8:{08B16013-7008-437B-8258-FE74DB0C52B9}"
-        "PackageCode" = "8:{5C8EF7E0-9779-49E1-AF45-7772FDF314FE}"
+        "PackageCode" = "8:{F60800DF-E910-4531-A62F-F50DBA4F82D3}"
         "UpgradeCode" = "8:{345EE650-FF2C-459A-966A-7932420F9193}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -654,7 +706,7 @@
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
-        "PostBuildEvent" = "8:"
+        "PostBuildEvent" = "8:powershell $BuildOuputDir = Split-Path -Parent '$(BuiltOuputPath)'; Compress-Archive -Path \"$BuildOuputDir\\*.exe\", \"$BuildOuputDir\\*.msi\" -DestinationPath '$(ProjectDir)..\\Publish\\Installer.zip' -Force\n"
         "RunPostBuildEvent" = "3:0"
         }
         "Registry"
@@ -1226,7 +1278,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_1A504857C73142829BCDE187844AB8AE"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\OMRAH\\obj\\Release\\OMRAH.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_083DA80F4A9B4641A90DFCE40246C1CF"
