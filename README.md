@@ -27,3 +27,4 @@ OMRAH can be configured by editing the "OMRAH.dll.config" app settings file in t
 | CategoryColor | Microsoft.Office.Interop.Outlook.OlCategoryColor | The color of the category to add to appointments that match the filters. | olCategoryColorGray |
 | SendResponse | bool | If true, a response will be sent to the meeting organizer. | False |
 | Response | Microsoft.Office.Interop.Outlook.OlMeetingResponse | The type of response to set for meeting requests which mach the filters. | olMeetingTentative |
+| ClearReminder | bool | If true, the reminder for the resulting appointment will be cleared. | True |

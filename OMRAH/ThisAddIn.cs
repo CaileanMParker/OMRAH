@@ -76,6 +76,11 @@ namespace OMRAH
             appointment.Categories = ResolveCategory();
             Outlook.MeetingItem response = appointment.Respond(Properties.Settings.Default.Response, false);
             if (Properties.Settings.Default.SendResponse) response.Send();
+            if (Properties.Settings.Default.ClearReminder)
+            {
+                appointment.ReminderOverrideDefault = true;
+                appointment.ReminderSet = false;
+            }
             response.Close(Outlook.OlInspectorClose.olDiscard);
             meetingRequest.Delete();
             appointment.Save();

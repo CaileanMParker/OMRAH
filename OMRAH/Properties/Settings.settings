@@ -29,5 +29,8 @@
     <Setting Name="Response" Type="Microsoft.Office.Interop.Outlook.OlMeetingResponse" Scope="User">
       <Value Profile="(Default)">olMeetingTentative</Value>
     </Setting>
+    <Setting Name="ClearReminder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
