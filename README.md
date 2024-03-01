@@ -1,5 +1,5 @@
 # OMRAH
-Outlook Meeting Request Autohandler, a bare-bones Outlook add-in that lets you configure simple rules to automatically handle meeting requests.
+Outlook Meeting Request Auto-Handler, a bare-bones Outlook add-in that lets you configure simple rules to automatically handle meeting requests.
 
 OMRAH works by filtering meeting requests based on a few parameters (subject, recipient, etc.), responding in the desired way (e.g., accept, decline, etc.), and adding a pre-configured category to the resulting appointment.
 
