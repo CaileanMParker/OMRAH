@@ -9,7 +9,7 @@ using System.Security;
 [assembly: AssemblyTitle("OMRAH")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("CaileanMParker")]
 [assembly: AssemblyProduct("OMRAH")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
