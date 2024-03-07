@@ -708,15 +708,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OMRAH"
-        "ProductCode" = "8:{C0BF4232-F409-460A-8FB8-0F954251708A}"
-        "PackageCode" = "8:{4AE25A71-68AA-422C-9197-EC188C15EFE1}"
+        "ProductCode" = "8:{F4769717-5214-41FD-9759-1F04D8995F56}"
+        "PackageCode" = "8:{2F32D7B8-3C6E-4299-B3EF-3B0A8BC25079}"
         "UpgradeCode" = "8:{345EE650-FF2C-459A-966A-7932420F9193}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:24.03.06"
+        "ProductVersion" = "8:24.03.07"
         "Manufacturer" = "8:CaileanMParker"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/CaileanMParker/OMRAH/issues"
@@ -795,7 +795,7 @@
                 {
                     "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_90DEA70BCF0348F5A8BE745DF748B759"
                     {
-                    "Name" = "8:Microsoft"
+                    "Name" = "8:Software"
                     "Condition" = "8:"
                     "AlwaysCreate" = "11:FALSE"
                     "DeleteAtUninstall" = "11:FALSE"
@@ -804,7 +804,7 @@
                         {
                             "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8DBF74DFFDA44931BB025571B1C58B6E"
                             {
-                            "Name" = "8:Office"
+                            "Name" = "8:Microsoft"
                             "Condition" = "8:"
                             "AlwaysCreate" = "11:FALSE"
                             "DeleteAtUninstall" = "11:FALSE"
@@ -813,66 +813,80 @@
                                 {
                                     "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CC0E51B55352416B9D77373C27626CD2"
                                     {
-                                    "Name" = "8:Outlook"
+                                    "Name" = "8:Office"
                                     "Condition" = "8:"
                                     "AlwaysCreate" = "11:FALSE"
                                     "DeleteAtUninstall" = "11:FALSE"
                                     "Transitive" = "11:FALSE"
                                         "Keys"
                                         {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_5B86709058774800BB9659BC4F6500A1"
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C0859EB20F164C3280DCB60D12C456FE"
                                             {
-                                            "Name" = "8:Addins"
+                                            "Name" = "8:Outlook"
                                             "Condition" = "8:"
                                             "AlwaysCreate" = "11:FALSE"
                                             "DeleteAtUninstall" = "11:FALSE"
                                             "Transitive" = "11:FALSE"
                                                 "Keys"
                                                 {
-                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4225FAF986BD46A8977913974343E2EC"
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_939A9A9C1DA44ED999BB31E17C2925F4"
                                                     {
-                                                    "Name" = "8:CaileanMParker.OMRAH"
+                                                    "Name" = "8:Addins"
                                                     "Condition" = "8:"
                                                     "AlwaysCreate" = "11:FALSE"
                                                     "DeleteAtUninstall" = "11:FALSE"
                                                     "Transitive" = "11:FALSE"
                                                         "Keys"
                                                         {
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_4225FAF986BD46A8977913974343E2EC"
+                                                            {
+                                                            "Name" = "8:CaileanMParker.OMRAH"
+                                                            "Condition" = "8:"
+                                                            "AlwaysCreate" = "11:FALSE"
+                                                            "DeleteAtUninstall" = "11:FALSE"
+                                                            "Transitive" = "11:FALSE"
+                                                                "Keys"
+                                                                {
+                                                                }
+                                                                "Values"
+                                                                {
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_89EC37034C3145668E2FAC1B8C875106"
+                                                                    {
+                                                                    "Name" = "8:FriendlyName"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:OMRAH (Outlook Meeting Request AutoHandler)"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_90C099D990DE44EF93B34A0EA8CF0C82"
+                                                                    {
+                                                                    "Name" = "8:LoadBehavior"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:3"
+                                                                    "Value" = "3:3"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_ED40BF8E8E2041669BDBE4C033199A8A"
+                                                                    {
+                                                                    "Name" = "8:Manifest"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:file:///[TARGETDIR]OMRAH.vsto|vstolocal"
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F9368617BEDF48A9A4E5DE8056B9A001"
+                                                                    {
+                                                                    "Name" = "8:Description"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:Outlook Addin to automatically tentatively accept and categorize filtered meeting invites"
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                         "Values"
                                                         {
-                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_89EC37034C3145668E2FAC1B8C875106"
-                                                            {
-                                                            "Name" = "8:FriendlyName"
-                                                            "Condition" = "8:"
-                                                            "Transitive" = "11:FALSE"
-                                                            "ValueTypes" = "3:1"
-                                                            "Value" = "8:Outlook Meeting Request AutoHandler"
-                                                            }
-                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_90C099D990DE44EF93B34A0EA8CF0C82"
-                                                            {
-                                                            "Name" = "8:LoadBehavior"
-                                                            "Condition" = "8:"
-                                                            "Transitive" = "11:FALSE"
-                                                            "ValueTypes" = "3:3"
-                                                            "Value" = "3:3"
-                                                            }
-                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_ED40BF8E8E2041669BDBE4C033199A8A"
-                                                            {
-                                                            "Name" = "8:Manifest"
-                                                            "Condition" = "8:"
-                                                            "Transitive" = "11:FALSE"
-                                                            "ValueTypes" = "3:1"
-                                                            "Value" = "8:file:///[TARGETDIR]OMRAH.vsto|vstolocal"
-                                                            }
-                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F9368617BEDF48A9A4E5DE8056B9A001"
-                                                            {
-                                                            "Name" = "8:Description"
-                                                            "Condition" = "8:"
-                                                            "Transitive" = "11:FALSE"
-                                                            "ValueTypes" = "3:1"
-                                                            "Value" = "8:Outlook Addin to automatically tentatively accept and categorize filtered meeting invites"
-                                                            }
                                                         }
                                                     }
                                                 }
@@ -998,8 +1012,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1203"
+                            "Setting" = "3:2"
+                            "Value" = "8:The installer will guide you through the steps required to install [ProductName] (v[Version]) on your computer."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
